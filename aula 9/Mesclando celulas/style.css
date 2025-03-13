@@ -1,0 +1,8 @@
+table{
+    width: 60vw;
+    border-collapse: collapse;
+}
+th,td{
+    background-color: gray;
+    
+}
