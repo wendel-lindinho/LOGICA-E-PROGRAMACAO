@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+     <style>
+        .container{
+            border: 1px solid black;
+            width: 80vw;
+            height: 70vh;
+            padding: 10px;
+            display: flex;   
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content: space-evenly;
+        }
+
+        .itens{
+            margin: 10px;
+            padding: 50px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        
+     </style>
+
+
+</head>
+<body>
+    <h1>FlexBox CSS</h1>
+
+    <div class="container">
+        <div class="itens">1</div>
+        <div class="itens">2</div>
+        <div class="itens">3</div>
+    </div>
+</body>
+</html>
