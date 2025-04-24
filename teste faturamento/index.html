@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Faturamento Loja de Bolos</h1>
+    </header>
+    
+    <main>
+
+        <section>
+            <h2>Minhas Vendas</h2>
+
+            <table id="tabela-produtos">
+                <thead>
+                    <tr>
+                        <th>Código Venda</th>
+                        <th>Produto</th>
+                        <th>Quantidade Vendida</th>
+                        <th>Valor Produto</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="produto">
+                        <td class="info-codigo">1</td>
+                        <td class="info-produto">Bolo de Cenoura</td>
+                        <td class="info-quantidade">10</td>
+                        <td class="info-valor-unidade">R$ 40.00</td>
+                        <td class="info-valor-total">0</td>
+                    </tr>
+
+                    <tr class="produto">
+                        <td class="info-codigo">2</td>
+                        <td class="info-produto">Bolo de Chocolate</td>
+                        <td class="info-quantidade">20</td>
+                        <td class="info-valor-unidade">R$ 30.00</td>
+                        <td class="info-valor-total">0</td>
+                    </tr>
+
+                    <tr class="produto">
+                        <td class="info-codigo">3</td>
+                        <td class="info-produto">Bolo de Maracujá</td>
+                        <td class="info-quantidade">4</td>
+                        <td class="info-valor-unidade">R$ 30.00</td>
+                        <td class="info-valor-total">0</td>
+                    </tr>
+
+                    <tr class="produto">
+                        <td class="info-codigo">4</td>
+                        <td class="info-produto">Bolo de Aipim</td>
+                        <td class="info-quantidade">10</td>
+                        <td class="info-valor-unidade">R$ 25.00</td>
+                        <td class="info-valor-total">0</td>
+                    </tr>
+
+                    <tr class="produto">
+                        <td class="info-codigo">5</td>
+                        <td class="info-produto">Bolo de Coco</td>
+                        <td class="info-quantidade">4</td>
+                        <td class="info-valor-unidade">R$ 25.00</td>
+                        <td class="info-valor-total">0</td>
+                    </tr>                  
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container">
+            <h2 id="titulo-form">Adicionar novo Produto</h2>
+
+            <form id="form-adiciona">
+                <!-- <div class="grupo">
+                    <label for="produto">Produto:</label>
+                    <input id="produto" name="produto" type="text" placeholder="Digite o nome do produto" class="campo">
+                </div> -->
+
+                <div class="grupo">
+                    <label for="produto">Produto:</label>
+                    
+                    <select name="cidade" id="produto" onchange="alterar()" class="campo campo-medio">
+                        <option value="Cenoura">Bolo Cenoura</option>
+                        <option value="Chocolate">Bolo Chocolate</option>
+                        <option value="Aipim">Bolo de Aipim</option>
+                        <option value="Coco">Bolo de Coco</option>
+                        <option value="Maracujá">Bolo de Maracujá</option>
+                    </select>
+                </div>
+
+
+                <div class="grupo">
+                    <label for="quantidade">Quantidade:</label>
+                    <input id="quantidade" name="quantidade" type="text" placeholder="Digite a altura do seu paciente" class="campo campo-medio">
+                </div>
+               
+               
+                <div class="grupo">
+                    <label for="valor">Valor Produto:</label>
+                    <input id="valor" name="valor" type="text" placeholder="00" class="campo campo-medio">
+                </div>
+
+
+
+
+                <button id="adicionar-produto" class="bto-principal" type="button" onclick="Adicionar()">Adicionar</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <script src="adicionaLinha.js"></script>
+    <script src="testeFaturamento.js"></script>
+    <script src="preencheValor.js"></script>
+
+</body>
+</html>
