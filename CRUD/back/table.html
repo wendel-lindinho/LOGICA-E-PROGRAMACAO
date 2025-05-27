@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nome</td>
+            <td>Sobrenome</td>
+            <td>Nota Atividade</td>
+            <td>Nota Prova</td>
+            <td>Nota Final</td>
+        </tr>
+    </thead>
+    <tbody>
+        while($row = $resultado->fetch_assoc()){
+            <tr>
+                <td>{$row['ID']}</td>
+                <td>{$row['NOME']}</td>
+                <td>{$row['SOBRENOME']}</td>
+                <td>{$row['NOTA_ATIVIDADE']}</td>
+                <td>{$row['NOTA_PROVA']}</td>
+                <td>{$row['NOTA_FINAL']}</td>
+            </tr>
+        }
+    </tbody>
+</table>
